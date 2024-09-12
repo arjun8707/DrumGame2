@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum🪘🛢️🪘🛢️Kit</title>
+    <link rel="icon" href="img/drum.jpg">
+</head>
+<style>
+               body{
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            h1{
+                font-size: 100px;
+            }
+            footer{
+                font-size: 50px;
+            }
+            button{
+                font-size: 50px;
+            }
+            .w{
+
+                background-image:url("img/drum.jpg");
+            }
+            .a{
+                background-image:url("img/drum.jpg");
+
+            }
+            .s{
+                background-image:url("img/drum.jpg");
+
+            }
+            .d{
+                background-image:url("img/drum.jpg");
+
+            }
+            .j{
+                background-image:url("img/drum.jpg");
+
+            }
+.k{
+    background-image:url("img/drum.jpg");
+
+}
+.l{
+    background-image:url("img/drum.jpg");
+
+}
+</style>
+<body>
+    <h1>Drum🪘🛢️🪘🛢️Kit</h1>
+    <div class="set">
+        <button class=" w drum">w</button>
+        <button class=" a drum">a</button>
+        <button class=" s drum">s</button>
+        <button class=" d drum">d</button>
+        <button class=" j drum">j</button>
+        <button class=" k drum">k</button>
+        <button class=" l drum">l</button>
+    </div>
+    <footer>made with ❤️ in london</footer>
+   
+    <script>
+         var NoofDrumButton=document.querySelectorAll('.drum').length;
+ for(var i=0;i<NoofDrumButton;i++){
+ document.querySelectorAll('.drum')[i].addEventListener('click',function(){
+    
+  var buttoninnerHTML=  this.innerHTML;
+  switch (buttoninnerHTML) {
+    case "w":
+        var drum1=new Audio("sound/drum1.mp3");
+        drum1.play();
+        break;
+  case "a":
+    var drum2=new Audio("sound/drum2.mp3");
+    drum2.play();
+    break;
+    case "s":
+        var drum3=new Audio("sound/drum3.mp3");
+        drum3.play();
+        break;
+        case "d":
+            var drum4=new Audio("sound/drum4.mp3");
+            drum4.play();
+            break;
+            case "j":
+                var drum5=new Audio("sound/drum5.mp3");
+                drum5.play();
+                break;
+                case "k":
+                    var drum6=new Audio("sound/drum6.mp3");
+                    drum6.play();
+                    break;
+                    case "l":
+                        var drum7=new Audio("sound/drum7.mp3");
+                        drum7.play();
+                        break;
+    default:console.log(buttoninnerHTML);
+        break;
+  }
+
+ });
+ }
+
+    </script>
+</body>
+</html>
